@@ -9,7 +9,6 @@ def browser_management():
     browser.driver.set_window_size(1080, 800)
 
 
-
 def test_valid_search():
     browser.open('/')
     browser.element('[name="q"]').should(be.blank).type('qaguru').press_enter()
